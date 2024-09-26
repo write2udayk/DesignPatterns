@@ -1,4 +1,4 @@
-package Adapter_Pattern;
+package adapter.desgin.pattern;
 
 public class PhonePe {
 

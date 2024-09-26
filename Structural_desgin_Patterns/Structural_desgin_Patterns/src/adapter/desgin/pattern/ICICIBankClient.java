@@ -1,9 +1,10 @@
-package Adapter_Pattern;
+package adapter.desgin.pattern;
 
-public class Yes_Bank_Client {
+public class ICICIBankClient {
+
 
 	// Simulate checking balance for an account
-	public double fetchBalance(String accountNumber) {
+	public double getBalance(String accountNumber) {
 		// Implementation that interacts with the actual bank's system to get the
 		// balance
 		System.out.println("Checking balance for account: " + accountNumber);
@@ -11,18 +12,19 @@ public class Yes_Bank_Client {
 	}
 
 	// Simulate sending money from one account to another
-	public boolean payMoney(String from, double amount, String to) {
+	public boolean transferMoney(String from, double amount, String to) {
 		// Implementation that interacts with the actual bank's system to transfer money
 		System.out.println("Sending " + amount + " from " + from + " to " + to);
 		return true; // Returning a mock success response
 	}
 
 	// Simulate registering a new account
-	public boolean registerAccount(String number) {
+	public boolean registerNewAccount(String accountNumber) {
 		// Implementation that interacts with the actual bank's system to register an
 		// account
-		System.out.println("Registering account from : " + number + " PhoneNumber");
+		System.out.println("Registering account: " + accountNumber);
 		return true; // Returning a mock success response
 	}
+
 
 }

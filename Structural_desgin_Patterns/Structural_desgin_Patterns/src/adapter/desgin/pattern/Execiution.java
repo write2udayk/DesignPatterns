@@ -1,18 +1,17 @@
-package Adapter_Pattern;
+package adapter.desgin.pattern;
 
 public class Execiution {
 
 	public static void main(String[] args) {
 
-		Yes_Bank_Client yesBankClient = new Yes_Bank_Client();
+		YesBankClient yesBankClient = new YesBankClient();
 
-		Yes_Bank_Adapter yesBAnkAdapter = new Yes_Bank_Adapter(yesBankClient);
+		YesBankAdapter yesBankAdapter = new YesBankAdapter(yesBankClient);
 
-		
-		ICICI_Bank_Client icici_client = new ICICI_Bank_Client();
-		ICICI_Bank_Adapter icici_adapter = new ICICI_Bank_Adapter(icici_client);
-		
-		PhonePe phone = new PhonePe(icici_adapter);
+		ICICIBankClient iciciClient = new ICICIBankClient();
+		ICICIBankAdapter iciciAdapter = new ICICIBankAdapter(iciciClient);
+
+		PhonePe phone = new PhonePe(iciciAdapter);
 
 		String accNum = "9272020001927";
 		System.out.println(phone.checkBalance(accNum));

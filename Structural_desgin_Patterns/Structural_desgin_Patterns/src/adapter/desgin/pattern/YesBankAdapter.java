@@ -1,10 +1,10 @@
-package Adapter_Pattern;
+package adapter.desgin.pattern;
 
-public class Yes_Bank_Adapter extends BankAPI {
+public class YesBankAdapter extends BankAPI {
 
-	private final Yes_Bank_Client yesBankclient;
+	private final YesBankClient yesBankclient;
 
-	public Yes_Bank_Adapter(Yes_Bank_Client client) {
+	public YesBankAdapter(YesBankClient client) {
 		this.yesBankclient = client;
 	}
 

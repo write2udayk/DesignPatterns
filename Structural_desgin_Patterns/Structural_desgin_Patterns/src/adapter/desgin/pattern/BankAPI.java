@@ -1,4 +1,4 @@
-package Adapter_Pattern;
+package adapter.desgin.pattern;
 
 public abstract class BankAPI {
 	public abstract double checkBalance(String accNum);
