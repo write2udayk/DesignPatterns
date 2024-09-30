@@ -1,7 +1,7 @@
 package adapter.desgin.pattern;
 
 /**
- * The {@code Execiution} class demonstrates how to use the Adapter design
+ * The {@code Execution} class demonstrates how to use the Adapter design
  * pattern to integrate different bank clients (YesBank, ICICI Bank) with a
  * payment system (PhonePe).
  * <p>
@@ -11,7 +11,7 @@ package adapter.desgin.pattern;
  */
 public final class Execiution {
     /**
-     * static final variable to amount to us .
+     * static final variable amount to return purpose.
      * <p>
      */
     private static final int AMOUNT = 100;
