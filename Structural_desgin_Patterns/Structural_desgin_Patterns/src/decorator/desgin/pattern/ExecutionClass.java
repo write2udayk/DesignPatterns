@@ -1,5 +1,6 @@
 package decorator.desgin.pattern;
 
+
 /**
  * The ExecutionClass serves as the entry point for the application,
  * demonstrating the use of the Decorator Design Pattern with different
@@ -20,7 +21,7 @@ package decorator.desgin.pattern;
       */
     public static void main(final String[] args) {
         Venilla venilla =
-        new Venilla(new Mango(new ChocolateCone(new CakeCone())));
+        new Venilla(new ChocolateCone(new Mango(new CakeCone())));
         System.out.println("Total Cost: " + venilla.getCost());
         System.out.println("Description: " + venilla.getDescription());
     }
