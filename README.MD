@@ -1,1 +1,1 @@
-# Structural Design Patterns
+# Desgin patterns
