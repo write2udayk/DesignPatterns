@@ -1,4 +1,4 @@
-package com.example.observerdesignpattern;
+package observerdesignpattern;
 
 
 public class EmailUser implements User {

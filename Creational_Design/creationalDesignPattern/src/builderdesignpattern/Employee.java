@@ -31,20 +31,28 @@ public class Employee {
      * @throws IllegalArgumentException if firstName or lastName is null
      */
     public Employee(EmployeeBuilder eb) {
-        if (eb.getFirstName() == null || eb.getLastName() == null)
-            throw new IllegalArgumentException("First name and Last name are required");
-
-        this.employeeId = eb.getEmployeeId();
-        this.firstName = eb.getFirstName();
-        this.lastName = eb.getLastName();
-        this.gender = eb.getGender();
-        this.address = eb.getAddress();
-        this.phoneNumber = eb.getPhoneNumber();
-        this.email = eb.getEmail();
-        this.department = eb.getDepartment();
-        this.jobTitle = eb.getJobTitle();
-        this.dateOfBirth = eb.getDateOfBirth();
-        this.maritalStatus = eb.getMaritalStatus();
+//        if (eb.getFirstName() == null )
+//            throw new IllegalArgumentException("First name is required");
+//        if(eb.getLastName()==null)
+//        	throw new IllegalArgumentException("Last name is required");
+        	
+        if (eb.getLastName()!=null&& eb.getFirstName()!=null) {
+        	this.employeeId = eb.getEmployeeId();
+            this.firstName = eb.getFirstName();
+            this.lastName = eb.getLastName();
+            this.gender = eb.getGender();
+            this.address = eb.getAddress();
+            this.phoneNumber = eb.getPhoneNumber();
+            this.email = eb.getEmail();
+            this.department = eb.getDepartment();
+            this.jobTitle = eb.getJobTitle();
+            this.dateOfBirth = eb.getDateOfBirth();
+            this.maritalStatus = eb.getMaritalStatus();
+        }else {
+        	throw new IllegalArgumentException("Last name is required");
+        }
+        
+        
     }
 
     // Getters and Setters for the Employee class

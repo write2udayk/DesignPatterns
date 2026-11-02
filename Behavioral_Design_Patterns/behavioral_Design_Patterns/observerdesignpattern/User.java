@@ -1,4 +1,4 @@
-package com.example.observerdesignpattern;
+package observerdesignpattern;
 
 /**
  * The {@code User} interface defines the methods for a user in the Observer

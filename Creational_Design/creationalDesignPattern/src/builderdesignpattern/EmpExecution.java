@@ -15,14 +15,14 @@ public class EmpExecution {
      */
     public static void main(String[] args) {
 
-        Employee eb = Employee.EmployeeBuilder.getEmployeeBuilder()
+    	Employee emp = Employee.EmployeeBuilder.getEmployeeBuilder()
                 .setFirstName("Uday")
-                .setLastName("KV")
+         	   .setLastName("KV")
                 .setPhoneNumber("987654321")
                 .setEmail("abc@gmail.com")
                 .Build();
 
-        System.out.println(eb.getFirstName());
+        System.out.println(emp.getFirstName());
     }
 }
 

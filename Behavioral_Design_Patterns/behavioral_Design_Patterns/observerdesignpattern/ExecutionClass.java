@@ -1,4 +1,4 @@
-package com.example.observerdesignpattern;
+package observerdesignpattern;
 
 /**
  * The {@code ExecutionClass} contains the main method to demonstrate the
